@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Josefin Sans", serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Yeseva One", serif;
+    margin: 0 0 0 0;
+}
+
+.bluetext {
+    color: #2B3A7E;
+}
+
+.whitetext {
+    color: #ffffff;
+}
+
+.blacktext {
+    color: black;
+}
+
+
+/** start mobile layout**/
+
+.mobile_only {
+    display: block;
+}
+
+.desktop_only {
+    display: none;
+}
+
+header {
+    height: 10vh;
+    background-color: aliceblue;
+    color:rgb(23, 1, 125);
+}
+
+header .logo img{
+    height: 3rem;
+    width: auto;
+    margin-top:6px;
+}
+
+.sticky{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+#product {
+    height: 85vh;
+    background: #ffffff url(../image/hero_phone.png)center no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10vh;
+}
+
+#product .producttext {
+    margin: 2rem 0 0 0;
+    height: 35vh;
+}
+
+#product .producttext p{
+    margin-bottom: 25px;
+}
+
+#product .producttext .btn_learn{
+    border: solid #152C5B 0.1rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #152C5B;
+    color: white;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 5px 5px 0px black; 
+}
+
+#product .producttext .btn_learn:hover{
+    color: #152C5B;
+    background-color: white;
+    border: solid #152C5B 0.1rem;
+}
+
+#intro {
+    height: 85vh;
+    background: aliceblue url(../image/Intro_landing.png)center no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .container_intro .introtext{
+    justify-content: center;
+    text-align: center;
+    border-radius: 10%;
+    background-color: #ffffffb1;
+    padding: 0.625rem 0.3125rem;
+}
+
+#intro .container_intro .introtext .tittle{
+    color: black;
+    
+}
+
+#intro .container_intro .introtext .detail{
+    color: #152C5B;
+    padding: 0 10px;
+    font-size: 0.7rem;
+}
+
+#benefit {
+    height: 85vh;
+    background-color: #152c5b;
+    padding: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefit .container_benefit .benefitpic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#benefit .container_benefit .benefitpic img{
+    width: 90%;
+    height: auto;
+}
+
+#benefit .benefittext{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#benefit .benefittext .tittle{
+    color: #AEC1FF;
+    font-size: 1rem;
+}
+
+#benefit .benefittext .detail{
+    font-size: 0.7rem;
+}
+
+#promenu {
+    height: 90vh;
+    padding: 1.5rem;
+    font-size: 1rem;
+    background: white url(../image/coffee\ bean\ background-01.png)center no-repeat;
+    background-size: cover;
+}
+
+#promenu .container_promenu .promenutext{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#promenu .container_promenu .promenutext p{
+    margin-bottom: 1.5rem;
+}
+
+#promenu .container_promenu .promenutext .btn_learn{
+    border-radius: 5rem;
+    text-decoration: none;
+    padding: 0.6rem;
+    border: solid #152C5B 0.1rem;
+    background-color: #152C5B;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 0 black;
+}
+
+#promenu .container_promenu .promenutext .btn_learn:hover{
+    color: #152C5B;
+    background-color: white;
+    border: solid #152C5B 0.1rem;
+}
+
+#promenu .container_promenu .show{
+    padding: 20px;
+    margin-top: -10px;
+}
+
+#promenu .container_promenu .show .showpro{
+    color: black;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #F5F5F5;
+    box-shadow: 0 5px 5px black;
+}
+
+#promenu .container_promenu .show .showpro img{
+    width: 10%;
+    height: auto;
+    margin-top: 5px;    
+}
+
+#delivery{
+    height: 80vh;
+    background-color: #2B3A7E;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+#delivery .container_delivery .deliverytext{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#delivery .container_delivery .deliverytext h1{
+    margin-bottom: 30px;
+}
+
+#delivery .container_delivery .deliverytext p{
+    text-align: left;
+    line-height: 1.2rem;
+    padding: 0 5px;
+}
+
+#delivery .container_delivery .deliverypic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delivery .container_delivery .deliverypic img{
+    width: 65%;
+    height: auto;
+    margin-top: -15px;
+}
+
+footer {
+    height: 15vh;
+    background-color: rgb(247, 248, 249);
+    text-align: center;
+}
+
+footer .footer img{
+    height: 4rem;
+    width: auto;
+    margin-top: 5px;
+}
+
+footer .footer p{
+    margin-top: 10px;
+}
+
+/*navi*/
+
+.off_navi {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #152C5B;
+    transition: right 500ms ease;
+    z-index: 2;
+}
+ 
+.off_navi h3 {
+    padding: 1.5rem;
+    margin:0;
+    text-transform: uppercase;
+    color:#fff;
+}
+ 
+.off_navi ul.navi_bar {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+}
+
+.off_navi ul.navi_bar li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #666;
+}
+
+.off_navi ul.navi_bar li:first-child {
+    border-top: 1px solid #666;
+}
+ 
+.off_navi ul.navi_bar li a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 1.5rem;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.off_navi ul.navi_bar li a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 250ms ease;
+    z-index: 2;
+}
+
+.off_navi ul.navi_bar li a:hover {
+    color: #152C5B;
+    background-color: white;
+}
+ 
+.off_navi ul.navi_bar li a {
+    color:#fff;
+}
+ 
+.off_navi ul.social{
+    list-style:none;
+    font-size:2em;
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    padding:0 0 0 2rem;
+}
+ 
+.off_navi ul.social li{
+    padding:0 1rem 0 0;
+}
+ 
+.off_navi ul.social li a{
+    color:#fff;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.off_navi ul.social li a:hover{
+    color:rgb(73, 173, 255);
+}
+ 
+#menu {
+  display: none;
+}
+ 
+#menu:checked ~ .off_navi{
+  right: 0;
+  transition: right 500ms ease;
+  display: block;
+}
+
+#menu:checked ~ #wrapper {
+  transform: translateX(-200px);
+  transition: transform 500ms ease;
+}
+ 
+.hamburger {
+    border:solid 1px #fff;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#fff;
+    transition: transform 250ms ease;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.hamburger ion-icon{
+    color: black;
+    font-size: 20px;
+}
+
+/** start desktop layout**/
+
+@media screen and (min-width: 768px){
+
+    .mobile_only {
+        display:none;
+    }
+   
+    .desktop_only {
+        display:block;
+    }
+    
+    .container {
+        margin:0 4rem 0 2rem; 
+    }
+
+    .flex_2col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header .logo img{
+        height: 5rem;
+        width: auto;
+        margin-top:auto;
+    }
+
+    header .main_navi {
+        margin-top: 2rem;
+        padding:0;
+        list-style:none;
+        width:600px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    header .main_navi li a{
+        text-decoration: none;
+        color: #152C5B;
+    }
+    
+    header .main_navi li a:hover{
+        color: rgb(0, 13, 255);
+    }
+
+    #product{
+        background: #ffffff url(../image/hero_landing.png)center no-repeat;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    #product .container_product{
+        display:grid;
+        grid-gap:20rem;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    #product .container_product .producttext{
+        height: 75vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: left;    
+        text-align: left;     
+        font-size: 24px;
+        margin-left: 60px;
+    }
+
+    #product .container_product .producttext .btn_learn{
+        width: 128px;
+    }
+
+    #intro .container_intro{
+        display:grid;
+        grid-gap:10rem;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    #intro .container_intro .introtext{
+        height: 50vh;
+        font-size: 24px;
+        border-radius: 15px;
+        background-color: #ffffff58;
+        margin-right: 60px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: left;    
+        text-align: left;
+        padding: 20px 25px;
+    }
+
+    #intro .container_intro .introtext .detail{
+        font-size: 16px;
+        padding: 0 -10px;
+        line-height: 1.2rem;  
+    }
+
+    #benefit .container_benefit{
+        display:grid;
+        grid-gap:2rem;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    #benefit .container_benefit .benefitpic img{
+        width: 100%;
+        height: auto;
+    }
+
+    #benefit .container_benefit .benefittext{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: left;    
+        text-align: left; 
+        font-size: 24px;
+        padding: 0 25px;
+        background: #152c5b url("../image/coffee\ bean-01.png") top right no-repeat ;
+        height: 70vh;
+    }
+
+    #benefit .container_benefit .benefittext .tittle{
+        font-size: 24px;
+    }
+
+    #benefit .container_benefit .benefittext .detail{
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    #promenu{
+        background: white url("../image/menu_background-01.png");
+        background-size: 100% 100%;
+        
+    }   
+
+    #promenu .container_promenu{
+        margin-top: 70px;
+    }
+
+    #promenu .container_promenu .promenutext p{
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+
+    #promenu .container_promenu .promenutext .btn_learn{
+        font-size: 24px; 
+    }
+
+    #promenu .container_promenu .show{
+        display: grid;
+        grid-gap:4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 35px;
+        padding: 0 50px;
+    }
+
+    #promenu .container_promenu .show .showpro{
+        width: 300px;
+        height: 250px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;    
+        text-align: center; 
+    }
+
+    #promenu .container_promenu .show .showpro img{
+        width: 120px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    #promenu .container_promenu .show .showpro p{
+        font-size: 18px;
+    }
+
+    #delivery .container_delivery{
+        display: grid;
+        grid-gap:10rem;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding: 0 50px;
+    }
+
+    #delivery .container_delivery .deliverytext{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: left;    
+        text-align: left;
+    }
+
+    #delivery .container_delivery .deliverytext p{
+        font-size: 24px;
+        line-height: 2rem; 
+    }
+
+    #delivery .container_delivery .deliverypic img{
+        width: 500px;
+        height: auto;
+    }
+}
+
